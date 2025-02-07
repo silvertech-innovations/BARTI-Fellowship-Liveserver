@@ -66,3 +66,5 @@ candidate_blueprints(app, mail)     # These blueprints are in the file - (Bluepr
 
 if __name__ == '__main__':
     app.run(debug = True)
+
+

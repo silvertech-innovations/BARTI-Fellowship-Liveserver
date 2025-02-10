@@ -1,7 +1,7 @@
 import requests
 from flask import Flask, request, redirect, session, render_template, jsonify
 from flask_mail import Mail
-import mysql.connector
+# import mysql.connector
 from Blueprints.blueprints_homepage import homepage_blueprints
 from Blueprints.blueprints_admin import admin_blueprints
 from Blueprints.blueprints_candidate import candidate_blueprints

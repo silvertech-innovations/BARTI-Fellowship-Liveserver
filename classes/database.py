@@ -3,9 +3,9 @@ import mysql.connector
 # All the hosts to load on the respective servers.# All the hosts to load on the respective servers.
 class HostConfig:
     hostserver = '192.168.10.69'
-    # preserver = '192.168.10.69:85'
+    preserver = '27.107.4.122'
     localserver = '127.0.0.1'
-    host = hostserver
+    host = preserver
 
 
 class ConnectParam:
@@ -44,7 +44,7 @@ class ConfigPaths:
             'RESEARCH_PAPER_FEEDBACK': 'static/uploads/research_paper_feedback/',
             # Add other paths here
         },
-        HostConfig.localserver: {
+        HostConfig.preserver: {
             'USER_DOC_SEC_FIVE': '/var/www/fellowship/fellowship/BartiFellowship/BartiFellowship/static/uploads/user_doc_secfive/',
             'RENT_AGREEMENT_REPORT': '/var/www/fellowship/fellowship/BartiFellowship/BartiFellowship/static/uploads/rent_agreement/',
             'HALF_YEARLY_REPORTS': '/var/www/fellowship/fellowship/BartiFellowship/BartiFellowship/static/uploads/half_yearly/',

@@ -2,10 +2,11 @@ import mysql.connector
 
 # All the hosts to load on the respective servers.# All the hosts to load on the respective servers.
 class HostConfig:
-    hostserver = '192.168.10.69'
+    hostserver = '43.240.64.151'
+    # hostserver = '192.168.10.69'
     preserver = '27.107.4.122'
     localserver = '127.0.0.1'
-    host = preserver
+    host = hostserver
 
 
 class ConnectParam:
@@ -14,10 +15,10 @@ class ConnectParam:
 
     def connect(self, use_dict=False):
         cnx = mysql.connector.connect(
-            user='root1',
-            password='Admin@#$123',
+            user='root',
+            password='A9CALcsd7lc%7ac',
             host=self.host,
-            database='BartiApplication'
+            database='ICSApplication'
         )
         cursor = cnx.cursor(dictionary=use_dict)
         return cnx, cursor
